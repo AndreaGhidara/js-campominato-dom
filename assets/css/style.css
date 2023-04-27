@@ -33,7 +33,7 @@ header{
 
 .square{
     cursor: pointer;
-    background-color: rgb(174, 213, 89);
+    background-color: rgb(108, 89, 213);
     border: 5px solid black;
     display: flex;
     justify-content: center;
@@ -56,5 +56,5 @@ header{
 }
 
 .clicked{
-    background-color: lightblue;
+    background-color: rgb(156, 228, 166);
 }
