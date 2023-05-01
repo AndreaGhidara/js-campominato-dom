@@ -4,57 +4,80 @@
     box-sizing: border-box;
 }
 
-:root{
-    --sizeHard : calc(100% / 10);
-    --sizeMedium : calc(100% / 9);
-    --sizeEasy : calc(100% / 7);
-
-}
-
 body{
-    background-color: lightsteelblue;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
 }
+
 header{
-    margin:1rem;
+    background-color: coral;
+}
+
+footer{
+    background-color: cadetblue;
+    border-top: 2px solid black;
+}
+
+.btn{
+    padding: 0.3rem;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .container{
+    display: flex;
     width: 80%;
-    height: 100vh;
     margin: auto;
+}
+
+.header{
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.main{
+    height: calc(100vh - 6rem);
     display: flex;
     flex-wrap: wrap;
-}
-
-.bombSquere{
-    background-color: red;
-}
-
-.square{
-    cursor: pointer;
-    background-color: rgb(108, 89, 213);
-    border: 5px solid black;
-    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.easySquere{
-    width:var(--sizeEasy) ;
-    height:var(--sizeEasy);
+.grid {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: dimgrey;
 }
 
-.mediumSquere{
-    width:var(--sizeMedium) ;
-    height:var(--sizeMedium);
-}
-
-.hardSquere{
-    width:var(--sizeHard) ;
-    height:var(--sizeHard);
+.cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid cadetblue;
 }
 
 .clicked{
-    background-color: rgb(156, 228, 166);
+    background-color: royalblue;
+    color: white;
+}
+
+.clicked-bomb{
+    background-color: crimson;
+    color: white;
 }

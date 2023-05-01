@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prato Fiorito</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <div class="headerContainer">
-            <h2>Seleziona la modalita di gioco</h2>
+        <div class="container header">
             <div>
-                <select name="" id="difficultyLevel">
-                    <option value="49">facile</option>
-                    <option value="81">medio</option>
-                    <option value="100">difficile</option>
-                </select>
-                <button id="createTable">
-                    Create Table
-                </button>
+                <h1 id="titleGame">Campo Minato Js</h1>
+            </div>
+            <div>
+                <label for="Difficulty">
+                    <span>Difficolta:</span>
+                    <select class="btn" name="Difficulty" id="difficulty">
+                        <option value="49">Easy</option>
+                        <option value="81">Medium</option>
+                        <option value="100">Hard</option>
+                    </select>
+                </label>
+                <button id="startGame" class="btn">PlayGame</button>
             </div>
         </div>
     </header>
-    <div class="container">
 
-    </div>
+    <main>
+        <div class="main container"> 
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <p>CreateByJavaScrip</p>
+            <p>Punteggio: 
+                <span id="score"">0</span>
+            </p>
+        </div>
+    </footer>
+
+    
 
     <script src="./assets/js/main.js"></script>
 </body>
